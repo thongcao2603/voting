@@ -129,6 +129,28 @@
 	</style>
 </head>
 <body>
-    
+    <div class="navbar">
+        <a href="/index.html">Vote</a>
+        <a href="/ListVoters.html">List Voters</a>
+    </div>
+
+    <div class="container">Welcome to the Decentralized Voting application</div>
+    <div>
+        <button onclick="connectMetamask()">Connect Metamask</button>
+        <p id="metamasknotification"></p>
+    </div>
+
+    <div class="container">
+        <span>Vote here</span>
+        <input type="number" id="vote" placeholder="Add index of the voter..." />
+        <button onclick="addVote()">Add Vote</button>
+        <p id="cand"></p>
+    </div>
+
+    <div>
+        <button onclick="voteStatus()">Check Voting Status</button>
+        <p id="status"></p>
+        <p id="time"></p>
+    </div>
 </body>
 </html>
