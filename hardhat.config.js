@@ -9,5 +9,8 @@ module.exports = {
       url:"https://data-seed-prebsc-1-s1.binance.org:8545/",
       accounts:[process.env.PRIV_KEY]
     }
+  },
+  etherscan:{
+    apiKey:process.env.API_KEY
   }
 };

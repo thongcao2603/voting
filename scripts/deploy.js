@@ -5,7 +5,7 @@ async function main(){
     console.log("deploy from address", deployer.address);
 
     const  Voting = await ethers.getContractFactory("Voting")
-    const voting = await Voting.deploy([],100)
+    const voting = await Voting.deploy(["Thong","Dep","Trai"],100)
     console.log("Voting address", voting.address)
 }
 

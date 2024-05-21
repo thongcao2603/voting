@@ -14,7 +14,7 @@ app.use(express.json())
 const path = require('path')
 const ethers = require('ethers')
 
-var PORT = 3000
+var PORT = 3333
 
 const RPC_URL = process.env.RPC_URL
 const PRIV_KEY = process.env.PRIV_KEY
