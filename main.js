@@ -243,4 +243,5 @@ const voteStatus = async () => {
         var status = document.getElementById("status");
         status.innerHTML = "Please connect metamask first";
     }
+
 }
