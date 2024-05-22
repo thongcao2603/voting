@@ -1,5 +1,6 @@
 require('dotenv').config()
 const express = require('express')
+var cors = require('cors')
 const app = express()
 
 const fileUpload = require('express-fileupload')
@@ -8,7 +9,7 @@ app.use(
         extended:true
     })
 )
-
+app.use(cors())
 app.use(express.static(__dirname))
 app.use(express.json())
 const path = require('path')
